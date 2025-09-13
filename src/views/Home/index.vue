@@ -1,0 +1,21 @@
+<script setup>
+import HomeCategory from './components/HomeCategory.vue'
+import HomeBanner from './components/HomeBanner.vue'
+import HomeNew from './components/HomeNew.vue'
+import HomeHot from './components/HomeHot.vue'
+import homeProduct from './components/HomeProduct.vue'
+import homePanel from './components/HomePanel.vue'
+</script>
+
+<template>
+  <div class="container">
+    <HomeCategory />
+    <HomeBanner />
+  </div>
+  <HomeNew />
+  <HomeHot />
+  <homeProduct />
+
+  <!-- 测试面板组件
+  <homePanel title="你好" subTitle="不好"></homePanel> -->
+</template>
