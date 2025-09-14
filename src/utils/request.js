@@ -8,7 +8,7 @@ import router from '@/router'
 
 const instance = axios.create({
   // TODO 1. 基础地址，超时时间
-  baseURL: 'http://pcapi-xiaotuxian-front-devtest.itheima.net',
+  baseURL: 'https://pcapi-xiaotuxian-front-devtest.itheima.net',
   timeout: 50000
 })
 
