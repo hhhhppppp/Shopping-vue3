@@ -14,8 +14,8 @@ const userStore = useUserStore()
 // 表单校验 （账号名 + 密码）
 // 1、准备表单对象
 const form = ref({
-  account: '',
-  password: '',
+  account: 'heima293',
+  password: 'hm#qd@23!',
   agree: true
 })
 // 2、准备规则对象
@@ -95,10 +95,10 @@ const onLogin =  () => {
             <el-form :model="form" :rules="rules" ref="formRef" label-position="right" label-width="60px"
               status-icon>
               <el-form-item  label="账户" prop="account">
-                <el-input v-model="form.account"/>
+                <el-input type="password" password v-model="form.account"/>
               </el-form-item>
               <el-form-item label="密码" prop="password">
-                <el-input v-model="form.password"/>
+                <el-input type="password" v-model="form.password"/>
               </el-form-item>
               <el-form-item label-width="22px" prop="agree">
                 <el-checkbox  size="large" v-model="form.agree">
@@ -123,7 +123,7 @@ const onLogin =  () => {
           <a href="javascript:;">搜索推荐</a>
           <a href="javascript:;">友情链接</a>
         </p>
-        <p>CopyRight &copy; 小兔鲜儿</p>
+        <p>CreateBy &copy; HpDay</p>
       </div>
     </footer>
   </div>
@@ -148,7 +148,7 @@ const onLogin =  () => {
       height: 132px;
       width: 100%;
       text-indent: -9999px;
-      background: url("@/assets/images/logo.png") no-repeat center 18px / contain;
+      background: url("@/assets/images/logo.png") no-repeat center / contain;
     }
   }
 
@@ -175,7 +175,7 @@ const onLogin =  () => {
 }
 
 .login-section {
-  background: url('@/assets/images/login-bg.png') no-repeat center / cover;
+  background: url('@/assets/images/1120.jpg') no-repeat center / cover;
   height: 488px;
   position: relative;
 

@@ -180,6 +180,8 @@ const createOeder = async () => {
 </template>
 
 <style scoped lang="scss">
+@use "sass:color";
+
 .xtx-pay-checkout-page {
   margin-top: 20px;
 
@@ -381,8 +383,8 @@ const createOeder = async () => {
     &.active,
     &:hover {
       border-color: $xtxColor;
-      background: lighten($xtxColor, 50%);
-      // background: colors.scale($xtxColor, $lightness: 50%);
+      // background: lighten($xtxColor, 50%); // 在 sass 中弃用了
+      background: color.scale($xtxColor, $lightness: 50%);
     }
 
     >ul {
